@@ -1,14 +1,14 @@
 import requests
 
 def check_username(username, site_url):
-    # Substitui {username} na URL pelo nome de usuário fornecido
+   
     url = site_url.format(username=username)
     
     try:
-        # Faz a requisição HTTP
+        
         response = requests.get(url)
         
-        # Verifica o código de status HTTP
+       
         if response.status_code == 200:
             print(f"[+] {username} encontrado em: {url}")
         elif response.status_code == 404:
@@ -19,7 +19,7 @@ def check_username(username, site_url):
     except requests.exceptions.RequestException as e:
         print(f"[!] Erro ao acessar {url}: {e}")
 
-# Lista de sites para verificar
+
 sites = {
     "GitHub": "https://github.com/{username}",
     "Twitter": "https://twitter.com/{username}",
@@ -28,7 +28,7 @@ sites = {
     "Youtube":"https://www.youtube.com/@{username}",
 }
 
-# Nome de usuário para verificar
+
 print('''                                                                                 	
         XXXXX                                                                   
        XXXXXXX                                                                  
