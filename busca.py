@@ -1,4 +1,7 @@
+import os
+os.system("pip install requests")
 import requests
+
 
 def check_username(username, site_url):
    
@@ -29,18 +32,32 @@ sites = {
 }
 
 
-print('''                                                                                 	
-        XXXXX                                                                   
-       XXXXXXX                                                                  
-     XXXXXXXXXXX                                                                
-  XXXX  X   X  XXXX                                                             
-     X XXX XXX X                                                                
-     X  X   X  X                                                                
-      X       X     
-        XXXXX
-''')
-username = input("seu_nome_de_usuario: ")
+print('''\33[32m
+ .OOOOOOOOOOOOOOO @@         D i c k  T r a c y        @@ OOOOOOOOOOOOOOOO.
+  OOOOOOOOOOOOOOOO @@                                    @@ OOOOOOOOOOOOOOOO
+  OOOOOOOOOO'''''' @@                                    @@ ```````OOOOOOOOO
+  OOOOO'' aaa@@@@@@@@@@@@@@@@@@@@"""                   """""""""@@aaaa `OOOO
+  OOOOO,""""@@@@@@@@@@@@@@""""                                     a@"" OOOA
+  OOOOOOOOOoooooo,                                            |OOoooooOOOOOS
+  OOOOOOOOOOOOOOOOo,                                          |OOOOOOOOOOOOC
+  OOOOOOOOOOOOOOOOOO        ferramenta para buscar nomes     ,|OOOOOOOOOOOOI
+  OOOOOOOOOOOOOOOOOO @           em redes sociais            |OOOOOOOOOOOOOI
+  OOOOOOOOOOOOOOOOO'@                                        OOOOOOOOOOOOOOb
+  OOOOOOOOOOOOOOO'a'                                        |OOOOOOOOOOOOOy
+  OOOOOOOOOOOOOO''                                           aa`OOOOOOOOOOOP
+  OOOOOOOOOOOOOOb,..                                          `@aa``OOOOOOOh
+  OOOOOOOOOOOOOOOOOOo                                           `@@@aa OOOOo
+  OOOOOOOOOOOOOOOOOOO|                       .                     @@@ OOOOe
+  OOOOOOOOOOOOOOOOOOO@                               aaaaaaa       @@',OOOOn
+  OOOOOOOOOOOOOOOOOOO@                        aaa@@@@@@@@""        @@ OOOOOi
+  OOOOOOOOOO~~ aaaaaa"a                 aaa@@@@@@@@@@""            @@ OOOOOx
+  OOOOOO aaaa@"""""""" ""            @@@@@@@@@@@@""               @@@|`OOOO'
+  OOOOOOOo`@@a                  aa@@  @@@@@@@""         a@        @@@@ OOOO9
+  OOOOOOO'  `@@a               @@a@@   @@""           a@@   a     |@@@ OOOO3
+  `OOOO'       `@    aa@@       aaa"""          @a        a@     a@@@',OOOO 
+ascii art feita por {Roy Sussman}   \33[32m''')
 
+username = input("seu_nome_de_usuario: ")
 # Verifica o nome de usuário em cada site
 for site_name, site_url in sites.items():
     print(f"Verificando {site_name}...")
